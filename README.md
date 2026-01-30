@@ -8,9 +8,9 @@ This Rulebix package contains rules, skills, and workflows to help you create ID
 
 ## How to Use
 
-1. **Fill IDE Documentation** → Open placeholder 'ide-documentation.md' in the '.rulebix' folder and paste the documentation provided by your IDE
-2. **Fill Metadata** → Open Open placeholder 'metadata.md' in the '.rulebix' folder and fill in adapter information
-3. **Generate Adapter** → Run workflow '/generate-adapter'
+1. **Fill IDE Documentation** → Open placeholder `ide-documentation.md` in the `.rulebix` folder and paste the documentation provided by your IDE
+2. **Fill Metadata** → Open Open placeholder `metadata.md` in the `.rulebix` folder and fill in adapter information
+3. **Generate Adapter** → Run workflow `/generate-adapter`
 
 ## Package Contents
 
