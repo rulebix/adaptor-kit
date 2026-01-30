@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "name": "adaptor-kit",
+  "description": "Rules and skills for creating Rulebix IDE adapters",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Rulebix Team",
+    "email": "team@rulebix.com",
+    "url": "https://rulebix.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rulebix/rulebix-adaptor-kit.git"
+  },
+  "tags": [
+    "adapter",
+    "yml",
+    "configuration",
+    "ide-integration"
+  ],
+  "variables": {
+    "default_version": "1.0.0",
+    "default_target_dir": ".agent"
+  },
+  "modules": [
+    {
+      "id": "adapter-structure",
+      "type": "rule",
+      "path": "rules/adapter-structure",
+      "title": "Adapter Structure Rules",
+      "description": "Rules for creating valid adapter YAML structure",
+      "tags": [
+        "structure",
+        "yaml",
+        "validation"
+      ],
+      "priority": 100,
+      "trigger": {
+        "mode": "glob",
+        "patterns": [
+          "*.yml",
+          "*.yaml"
+        ]
+      }
+    },
+    {
+      "id": "adapter-expressions",
+      "type": "rule",
+      "path": "rules/adapter-expressions",
+      "title": "Adapter Expression Rules",
+      "description": "Rules for using expressions in adapter configuration",
+      "tags": [
+        "expressions",
+        "syntax",
+        "templating"
+      ],
+      "priority": 100,
+      "trigger": {
+        "mode": "glob",
+        "patterns": [
+          "*.yml",
+          "*.yaml"
+        ]
+      }
+    },
+    {
+      "id": "adapter-mapping",
+      "type": "rule",
+      "path": "rules/adapter-mapping",
+      "title": "Adapter Mapping Rules",
+      "description": "Rules for path mapping and file renaming in adapters",
+      "tags": [
+        "mapping",
+        "paths",
+        "renaming"
+      ],
+      "priority": 100,
+      "trigger": {
+        "mode": "glob",
+        "patterns": [
+          "*.yml",
+          "*.yaml"
+        ]
+      }
+    },
+    {
+      "id": "adapter-frontmatter",
+      "type": "rule",
+      "path": "rules/adapter-frontmatter",
+      "title": "Adapter Frontmatter Rules",
+      "description": "Rules for frontmatter transformation in adapters",
+      "tags": [
+        "frontmatter",
+        "metadata",
+        "transformation"
+      ],
+      "priority": 100,
+      "trigger": {
+        "mode": "glob",
+        "patterns": [
+          "*.yml",
+          "*.yaml"
+        ]
+      }
+    },
+    {
+      "id": "adapter-development",
+      "type": "skill",
+      "path": "skills/adapter-development",
+      "title": "Adapter Development",
+      "description": "Skills for developing custom IDE adapters",
+      "tags": [
+        "development",
+        "adapter",
+        "ide"
+      ],
+      "trigger": {
+        "mode": "manual"
+      }
+    },
+    {
+      "id": "generate-adaptor",
+      "title": "generate-adaptor",
+      "type": "workflow",
+      "path": "workflows/generate-adaptor",
+      "description": "desc",
+      "trigger": {
+        "mode": "manual"
+      }
+    },
+    {
+      "id": "ide-documentation",
+      "title": "ide-documentation",
+      "type": "placeholder",
+      "path": "placeholders/ide-documentation",
+      "description": "Fill this placeholder with the documentation available in the target IDE",
+      "trigger": {
+        "mode": "manual"
+      }
+    },
+    {
+      "id": "metadata",
+      "title": "metadata",
+      "type": "placeholder",
+      "path": "placeholders/metadata",
+      "description": "For metadata",
+      "trigger": {
+        "mode": "manual"
+      }
+    }
+  ]
+}
