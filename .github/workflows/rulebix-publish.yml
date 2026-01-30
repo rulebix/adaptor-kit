@@ -1,0 +1,25 @@
+name: Rulebix Auto-Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-registry:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish to Rulebix Registry
+        uses: rulebix/publish-action@dev
+        with:
+          retries: 3
