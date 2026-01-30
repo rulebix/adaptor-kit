@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "adaptor-kit",
   "description": "Rules and skills for creating Rulebix IDE adapters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": {
     "name": "Rulebix Team",
