@@ -18,4 +18,3 @@ This Rulebix package contains rules, skills, and workflows to help you create ID
 - **1 Skill** - Complete guide for adapter development with examples
 - **1 Workflow** - Auto-generate adapter from IDE documentation
 - **2 Placeholders** - Forms for IDE documentation and metadata input
-
